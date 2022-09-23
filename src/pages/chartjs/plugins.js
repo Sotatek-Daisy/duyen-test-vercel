@@ -2,7 +2,6 @@ export const plugins = [
   {
     afterDraw: (chart) => {
       const { tooltip } = chart;
-      console.log("chart", chart);
       if (tooltip._active && tooltip._active.length) {
         const activePoint = tooltip._active[0];
         const ctx = chart.ctx;
